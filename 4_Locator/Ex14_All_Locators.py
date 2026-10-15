@@ -58,5 +58,17 @@ driver.find_element(By.PARTIAL_LINK_TEXT,"Face").click()
 print("By.PARTIAL_LINK_TEXT Locator Executed")
 print("-----------------------------------------------")
 
+#Absolute Xpath
+
+driver.get('https://testautomationpractice.blogspot.com/')
+driver.find_element(By.XPATH,"//table[@name='BookTable']/tbody/tr[2]/td[2]")
+print("Using Absolute Xpath find the text from table -->From Parent to immediate chiled")
+
+print("-----------------------------------------------")
+
+driver.get('https://testautomationpractice.blogspot.com/')
+driver.find_element(By.XPATH,"//table[@name='BookTable']//td[2]")
+print(" Using Relative xpath --->From Parent to any child  ")
+
 
 driver.close()

@@ -7,6 +7,13 @@ driver.get("https://www.google.com/")
 print(driver.title)
 time.sleep(10)
 
+driver.minimize_window()
+time.sleep(2)
+driver.minimize_window()
+time.sleep(2)
+driver.fullscreen_window()
+time.sleep(2)
+
 driver.execute_script("window.open('https://www.youtube.com')")
 time.sleep(10)
 print(driver.title)

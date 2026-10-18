@@ -17,7 +17,7 @@ time.sleep(2)
 #switch to Inter/Nester iframe
 driver.switch_to.frame(driver.find_element(By.XPATH,"//iframe[@title='Inner']"))
 
-#get text of out iframe
+#get text of Inter/Nester iframe
 InnerFrame=driver.find_element(By.XPATH,"//p[text()='Inner iframe content']").text
 print(InnerFrame)
 
